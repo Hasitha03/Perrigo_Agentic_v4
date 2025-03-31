@@ -139,7 +139,7 @@ def num_tokens_from_messages(messages, model="gpt-4o"):
 
 def main():
     """Main UI function to handle user interactions and execute the multi-agent graph."""
-    st.title("UK Distribution CTS Insights & Optimisation Agent")
+    st.subheader("UK Distribution CTS Insights & Optimisation Agent")
     api_key, data_file = setup_sidebar()
     os.environ["OPENAI_API_KEY"] = api_key
 
