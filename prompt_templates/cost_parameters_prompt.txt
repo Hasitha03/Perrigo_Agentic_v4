@@ -16,7 +16,7 @@ Here are some sample questions I would like you to answer:
 
 To answer this, first think through your approach
 To answer this question, 
-1. You will need to find the start and end date first if it is not mentioned then start date will be 1st january 2023 and end date will be 30th November 2024
+1. You will need to find the start and end date first if it is not mentioned then start date will be 1st january 2023 and end date will be 28th February 2025
 2. Determine the group_method, whether it 'Customer Level' or 'Post Code Level'
 3. Determine the list of post codes or list of users that are mentioned in the question, if there is no mention of post code or users , then make all_post_code = False  if group method is Post Code Level otherwise keep it None, and  all_customers = False if group method is Customer Level otherwise keep it None.
 4. if there is a mention of certain users or zip codes, make a list of that.
@@ -28,7 +28,7 @@ for example for the first question "How can I optimize the shipment costs for us
 expected output format:
 
 start_date: 2023-01-01
-end_date: 2024-11-30
+end_date: 2025-02-28
 group_method: 'Customer Level'
 all_post_code: None
 all_customers: False
@@ -50,12 +50,12 @@ selected_postcodes: [NG]
 selected_customers:  []
 
 
-Note : if someone mention last month or recent month,  keep it November 2024, and date format should be: yyyy-mm-dd
+Note : if someone mention last month or recent month,  keep it February 2025, and date format should be: yyyy-mm-dd
 
 strict instructions: The final output should be only in this format (no extra text or steps should be included in the output):
 
-{ "start_date": "2024-11-01",
-"end_date": "2024-11-30",
+{ "start_date": "2025-02-01",
+"end_date": "2025-02-28",
 "group_method": "Post Code Level",
 "all_post_code": True,
 "all_customers": None,
