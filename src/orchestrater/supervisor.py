@@ -133,7 +133,7 @@ function_def = {
                 "description": "The direct response to provide to the user when SELF_RESPONSE is selected."
             }
         },
-        "required": ["thought_process", "next"],
+        "required": ["thought_process", "next","direct_response"],
     },
 }
 
