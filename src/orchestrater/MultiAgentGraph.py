@@ -351,14 +351,6 @@ def generate_scenario_agent(state: AgentState):
     
     return [HumanMessage(content=message)]
 
-# ---------------------- Driver Identification Agent ----------------------
-
-def driver_identification_agent(state: AgentState):
-    """
-    Driver Identification Agent: Identifies the cost drivers for shipments.
-    """
-    message = "Driver Identification Agent Called. This feature is still under development."
-    return [HumanMessage(content=message)]
 
 
 
@@ -366,7 +358,6 @@ def driver_identification_agent(state: AgentState):
 
 # Define agent nodes
 bi_agent_node = functools.partial(agent_node, agent=bi_agent, name="Insights Agent")
-driver_identification_agent_node = functools.partial(agent_node, agent=driver_identification_agent, name="Driver Identification Agent")
 dynamic_cost_optimization_node = functools.partial(agent_node, agent=Dynamic_CostOptimization_Agent, name="Dynamic Cost Optimization Agent")
 static_cost_optimization_node = functools.partial(agent_node, agent=Static_CostOptimization_agent, name="Static Cost Optimization Agent")
 generate_scenario_agent_node = functools.partial(agent_node, agent=generate_scenario_agent, name="Generate Scenario Agent")
@@ -377,7 +368,6 @@ workflow = StateGraph(AgentState)
 
 # Add nodes
 workflow.add_node("Insights Agent", bi_agent_node)
-workflow.add_node("Driver Identification Agent", driver_identification_agent_node)
 workflow.add_node("Dynamic Cost Optimization Agent", dynamic_cost_optimization_node)
 workflow.add_node("Static Cost Optimization Agent", static_cost_optimization_node)
 workflow.add_node("Generate Scenario Agent", generate_scenario_agent_node)
