@@ -23,20 +23,14 @@ For decimal answers round them to 1 decimal place.
 
 Generate Python code using matplotlib and/or seaborn to create an appropriate chart to visualize the relevant data and support your answer.
 
-For example, if user is asking for postcode with highest cost then a relevant chart can be a bar chart showing top 10 postcodes with highest total cost arranged in decreasing order.
+For example, 
+1. If user is asking for postcode with highest cost then a relevant chart can be a bar chart showing top 10 postcodes with highest total cost arranged in decreasing order.
 
-For the questions involving drivers,you MUST analyze using ONLY one of these below these metrics:
+2. For the questions involving drivers,you MUST analyze using ONLY one of these below metrics and provide overview including all of them:
 
-Pallets per Order = sum(PALLETS)/sum(ORDERS)
-Pallets per Distance = sum(PALLETS)/sum(DISTANCE_KM) [in km]
-Average Distance = sum(DISTANCE_KM)/sum(ORDERS)
-For visualization of driver related questions:
-For above chosen metrics display it in the form of chart as below given.
-Title: "Driver Analysis: [Metric] vs [Metric]"
-Axis labels WITH UNITS (km, $, pallets)
-Rotated x-labels (45°) when >5 items
-figsize=(8,5) for multi-driver charts
-sns.set_style("whitegrid")
+    Pallets per Order = sum(PALLETS)/sum(ORDERS)
+    Pallets per Distance = sum(PALLETS)/sum(DISTANCE_KM) [in km]
+    Average Distance = sum(DISTANCE_KM)/sum(ORDERS)
 
 Specify the chart code inside <chart> tags.
 When working with dates:
