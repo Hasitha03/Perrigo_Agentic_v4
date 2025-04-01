@@ -41,7 +41,7 @@ def main():
 
     try:
         logo = Image.open("Images/image.png")
-        st.sidebar.image(logo, width=80)
+        st.sidebar.image(logo, width=100)
     except Exception:
         st.sidebar.error("Logo image not found.")
 
