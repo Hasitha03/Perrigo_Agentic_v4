@@ -523,7 +523,7 @@ def get_parameters_values(api_key, query,attempt):
         3. Optimize shipments for a '3 days delivery scenario' with shipment window range 2 to 8, total shipment capacity 40 and utilization threshold 90.
 
         To answer this, first think through your approach:
-        1. Determine the start and end date. If not mentioned, then default to start_date as 2023-01-01 and end_date as 2024-11-30.
+        1. Determine the start and end date. If not mentioned, then default to start_date as 2023-01-01 and end_date as 2025-02-28.
         2. Determine the group_method: either 'Customer Level' or 'Post Code Level'.
         3. Identify the list of post codes or users mentioned in the question. If none are mentioned, then set:
         - all_post_code = False if group_method is 'Post Code Level', otherwise keep it as None.
@@ -554,7 +554,7 @@ def get_parameters_values(api_key, query,attempt):
 
         {
             "start_date": "2023-01-01",
-            "end_date": "2024-11-30",
+            "end_date": "2025-02-28",
             "group_method": "Customer Level",
             "all_post_code": None,
             "all_customers": False,
@@ -582,7 +582,7 @@ def get_parameters_values(api_key, query,attempt):
             "utilization_threshold": 95
         }
 
-        Note: If someone mentions "last month" or "recent month", keep it as November 2024, and date format should be: yyyy-mm-dd.
+        Note: If someone mentions "last month" or "recent month", keep it as February 2025, and date format should be: yyyy-mm-dd.
 
         Strict instructions: 
         1. Your final output must be exactly a valid JSON dictionary as shown below and nothing else. Do not include any commentary, markdown formatting, or additional text.
