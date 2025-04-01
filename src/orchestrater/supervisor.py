@@ -27,10 +27,7 @@ members = [
          It handles tasks such as performing exploratory data analysis (EDA), calculating summary statistics, 
          identifying trends, comparing metrics across different dimensions (e.g., users, regions), and generating 
          visualizations to help understand shipment-related patterns and performance."""},
-    {
-        "agent_name": "Driver Identification Agent",
-        "description": 
-        """Handles driver identification."""},
+
     {
         "agent_name": "Dynamic Cost Optimization Agent",
         "description": 
